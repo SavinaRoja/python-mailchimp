@@ -106,7 +106,7 @@ def merge_results(x, y):
     The result only differs from `x.update(y)` in the way that it handles list
     values when both x and y have list values for the same key. In which case
     the returned dictionary, z, has a value according to:
-      z[key] = x[key] + z[key]
+      z[key] = x[key] + y[key]
 
     :param x: The first dictionary
     :type x: :py:class:`dict`
